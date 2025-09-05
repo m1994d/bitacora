@@ -1,141 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bitácora Técnica</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitácora Técnica</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
 
-    .container {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      max-width: 500px;
-      width: 90%;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      opacity: 0.9;
-    }
-
-    .features {
-      text-align: left;
-      margin: 30px 0;
-      font-size: 1rem;
-    }
-
-    .features ul {
-      padding-left: 20px;
-    }
-
-    .features li {
-      margin: 10px 0;
-      line-height: 1.5;
-    }
-
-    .start-button {
-      background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
-      border: none;
-      color: white;
-      padding: 15px 30px;
-      font-size: 1.1rem;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .start-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-      background: linear-gradient(45deg, #4ECDC4, #FF6B6B);
-    }
-
-    .start-button:active {
-      transform: translateY(0);
-    }
-
-    .icon {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: 768px) {
       .container {
-        padding: 20px;
-        margin: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        max-width: 500px;
+        width: 90%;
       }
-      
+
       h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       }
-      
+
       .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.9;
+      }
+
+      .features {
+        text-align: left;
+        margin: 30px 0;
         font-size: 1rem;
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="icon">📋</div>
-    <h1>Bitácora Técnica</h1>
-    <p class="subtitle">Sistema completo para gestión de instalaciones, mantenimientos y visitas técnicas</p>
-    
-    <div class="features">
-      <ul>
-        <li>📊 Dashboard con estadísticas en tiempo real</li>
-        <li>📝 Registro de instalaciones y mantenimientos</li>
-        <li>👥 Gestión completa de clientes</li>
-        <li>📈 Reportes mensuales, anuales y por cliente</li>
-        <li>📥 Exportación a Excel y PDF</li>
-      </ul>
+
+      .features ul {
+        padding-left: 20px;
+      }
+
+      .features li {
+        margin: 10px 0;
+        line-height: 1.5;
+      }
+
+      .start-button {
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .start-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(45deg, #4ecdc4, #ff6b6b);
+      }
+
+      .start-button:active {
+        transform: translateY(0);
+      }
+
+      .icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px;
+          margin: 20px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .subtitle {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">📋</div>
+      <h1>Bitácora Técnica</h1>
+      <p class="subtitle">
+        Sistema completo para gestión de instalaciones, mantenimientos y visitas
+        técnicas
+      </p>
+
+      <div class="features">
+        <ul>
+          <li>📊 Dashboard con estadísticas en tiempo real</li>
+          <li>📝 Registro de instalaciones y mantenimientos</li>
+          <li>👥 Gestión completa de clientes</li>
+          <li>📈 Reportes mensuales, anuales y por cliente</li>
+          <li>📥 Exportación a Excel y PDF</li>
+        </ul>
+      </div>
+
+      <button class="start-button" onclick="window.location.href='./src/index.js'">
+        🚀 Empezar a Usar
+      </button>
     </div>
 
-    <button class="start-button" onclick="window.location.href='./src/index.js'">
-      🚀 Empezar a Usar
-    </button>
-  </div>
+    <script>
+      document
+        .querySelector(".start-button")
+        .addEventListener("click", function () {
+          const button = this;
+          const originalText = button.innerHTML;
 
-  <script>
-    // Si prefieres una redirección más suave, puedes usar:
-    
-    document.querySelector('.start-button').addEventListener('click', function() {
-      this.innerHTML = '🚀 Cargando...';
-      this.disabled = true;
-      
-      setTimeout(() => {
-        window.location.href = './src/index.js';
-      }, 500);
-    });
-    
-  </script>
-</body>
+          button.innerHTML = "🔄 Iniciando aplicación...";
+          button.disabled = true;
+
+          // Simular un pequeño retraso para mejor UX
+          setTimeout(() => {
+            window.location.href = "./src/index.js";
+          }, 800);
+        });
+    </script>
+  </body>
 </html>
